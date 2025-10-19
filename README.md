@@ -122,5 +122,3 @@ ksense-assessment/
 This project was a great opportunity to demonstrate both backend engineering and system reliability skills under real-world API constraints.
 
 
-
-```
