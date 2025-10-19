@@ -28,7 +28,9 @@ The API also identifies high-risk and fever patients, flags missing or invalid d
 | Language | TypeScript |
 | HTTP Client | Axios |
 | Tooling | Nodemon, ts-node |
+| API Testing | Postman |
 | Package Manager | npm |
+
 
 ---
 
@@ -58,44 +60,6 @@ npm run dev
 ...
 ```
 
----
-
-## 📡 API Endpoints
-
-### 1️⃣ GET `/patients`
-Generates the alert lists required for the assessment.
-
-**Example Response**
-```json
-{
-  "high_risk_patients": ["DEMO012", "DEMO002", "DEMO008"],
-  "fever_patients": ["DEMO012", "DEMO008"],
-  "data_quality_issues": ["DEMO009"]
-}
-```
-
-### 2️⃣ GET `/patients/all`
-Returns the full dataset with calculated `risk_score`.
-
-**Example Response**
-```json
-[
-  {
-    "patient_id": "DEMO012",
-    "age": 89,
-    "blood_pressure": "180/110",
-    "temperature": 103.2,
-    "risk_score": 7
-  },
-  {
-    "patient_id": "DEMO008",
-    "age": 59,
-    "blood_pressure": "125/82",
-    "temperature": 102.3,
-    "risk_score": 5
-  }
-]
-```
 
 ---
 
@@ -118,15 +82,7 @@ Returns the full dataset with calculated `risk_score`.
 
 ---
 
-## 🧠 Example Calculation
 
-| Patient | BP | Temp | Age | Risk |
-|----------|----|------|-----|------|
-| Mary | 180/110 | 103.2 | 89 | 7 |
-| Jane | 140/90 | 99.2 | 67 | 5 |
-| Grace | 125/82 | 102.3 | 59 | 5 |
-
----
 
 ## 🧰 Troubleshooting
 
@@ -143,23 +99,29 @@ Returns the full dataset with calculated `risk_score`.
 ksense-assessment/
 │
 ├── src/
-│   └── index.ts            # main application logic
+│   └── index.ts            # backend logic
+├── submission1/
+│   └── submit.js            # Output
 ├── package.json            # dependencies & scripts
 ├── tsconfig.json           # TypeScript compiler settings
 └── README.md               # documentation
 ```
 
-## Output 
+## Score 
 
 
+
+---
+
+![Final Output](img/Final_Output.png)
+```
+
+## Summary
 
 ---
 
 > “This project was a great opportunity to demonstrate both backend engineering and system reliability skills under real-world API constraints.”
 
----
-
-![Final Output](img/Final_Output.png)
 
 
 ```
