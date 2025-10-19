@@ -114,13 +114,12 @@ ksense-assessment/
 ---
 
 ![Final Output](img/Final_Output.png)
-```
 
 ## Summary
 
 ---
 
-> “This project was a great opportunity to demonstrate both backend engineering and system reliability skills under real-world API constraints.”
+This project was a great opportunity to demonstrate both backend engineering and system reliability skills under real-world API constraints.
 
 
 
