@@ -151,13 +151,15 @@ ksense-assessment/
 
 ## Output 
 
-![alt text](image-1.png)
+
 
 ---
 
 > “This project was a great opportunity to demonstrate both backend engineering and system reliability skills under real-world API constraints.”
 
 ---
+
+![Final Output](img/Final_Output.png)
 
 
 ```
